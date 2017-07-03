@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: white;" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trip_plan.DrawerController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Accordion fx:id="day_plan_list" prefWidth="185.0" style="-fx-background-color: white;" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

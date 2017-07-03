@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="518.0" minWidth="912.0" prefHeight="518.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trip_plan.Select_cityController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="922.0" layoutX="-10.0">
+         <image>
+            <Image url="@driving-holiday-road-trip.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="292.0" layoutY="58.0" prefHeight="43.0" prefWidth="318.0" text="Where do u wanna go??" wrapText="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="212.0" prefHeight="33.0" prefWidth="100.0" text="Select City-" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo_city" layoutX="406.0" layoutY="212.0" onAction="#enable_check" opacity="0.75" prefHeight="33.0" prefWidth="228.0" promptText="City" style="-fx-background-color: #ffffff;" />
+      <DatePicker fx:id="from_date" layoutX="196.0" layoutY="304.0" onAction="#enable_check1" />
+      <DatePicker fx:id="to_date" layoutX="594.0" layoutY="305.0" onAction="#enable_check2" />
+      <Label layoutX="21.0" layoutY="303.0" text="Starting date of trip :  " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="303.0" text="End date of trip : " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Sumbit" buttonType="RAISED" layoutX="388.0" layoutY="406.0" onAction="#combo_city_func" prefHeight="39.0" prefWidth="109.0" ripplerFill="WHITE" style="-fx-background-color: #2196f3;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

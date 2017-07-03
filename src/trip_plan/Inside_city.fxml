@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trip_plan.Inside_cityController">
+   <tabs>
+      <Tab text="About">
+        <content>
+          <AnchorPane fx:id="about_pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+        </content>
+      </Tab>
+      <Tab fx:id="hotel_tab" text="Hotels" />
+      <Tab fx:id="tourist_tab" text="Tourist Spots" />
+   </tabs>
+</JFXTabPane>

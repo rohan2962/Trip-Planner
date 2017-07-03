@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trip_plan.Hotel_detailsController">
+   <children>
+      <Label layoutX="296.0" layoutY="35.0" prefHeight="17.0" prefWidth="220.0" text="Book Hotel Rooms" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="123.0" prefHeight="17.0" prefWidth="45.0" text="From : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="123.0" prefHeight="17.0" prefWidth="45.0" text="To :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="219.0" prefHeight="43.0" prefWidth="203.0" text="Number of single bed rooms">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="219.0" prefHeight="43.0" prefWidth="203.0" text="Number of double bed rooms">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="single_count" layoutX="117.0" layoutY="293.0" prefHeight="25.0" prefWidth="173.0" />
+      <JFXComboBox fx:id="double_count" layoutX="502.0" layoutY="293.0" prefHeight="25.0" prefWidth="173.0" />
+      <JFXButton fx:id="search" buttonType="RAISED" layoutX="324.0" layoutY="361.0" onAction="#search_for_rooms" prefHeight="48.0" prefWidth="152.0" style="-fx-background-color: #ff0000;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <DatePicker fx:id="from_date" layoutX="129.0" layoutY="121.0" />
+      <DatePicker fx:id="to_date" layoutX="462.0" layoutY="121.0" />
+      <Label fx:id="Error_label" layoutX="265.0" layoutY="172.0" prefHeight="43.0" prefWidth="261.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

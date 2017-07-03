@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="800.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trip_plan.Hotel_display_prototypeController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label layoutX="498.0" layoutY="56.0" prefHeight="35.0" prefWidth="119.0" text="2 Bed-room Cost">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="129.0" prefHeight="35.0" prefWidth="119.0" text="1 Bed-room Cost">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="two_bed_price" layoutX="635.0" layoutY="56.0" prefHeight="35.0" prefWidth="88.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="book_hotel" buttonType="RAISED" layoutX="567.0" layoutY="233.0" onAction="#book_room" prefHeight="45.0" prefWidth="101.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="Book" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="one_bed_price" layoutX="635.0" layoutY="129.0" prefHeight="35.0" prefWidth="95.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Not_avai" layoutX="486.0" layoutY="186.0" prefHeight="20.0" prefWidth="128.0" text="Not Available!!" textFill="RED" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+   <graphic>
+      <AnchorPane onMouseClicked="#open_tab" prefHeight="113.0" prefWidth="900.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ImageView fx:id="hotel_main_pic" fitHeight="103.0" fitWidth="156.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="hotel_name" layoutX="181.0" layoutY="39.0" prefHeight="35.0" prefWidth="213.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="main_price" layoutX="569.0" layoutY="62.0" prefHeight="17.0" prefWidth="111.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="five_star" layoutX="569.0" layoutY="22.0" prefHeight="53.0" prefWidth="102.0" text="*****" textFill="#f2ff00" visible="false">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="four_star" layoutX="569.0" layoutY="22.0" prefHeight="53.0" prefWidth="102.0" text="****" textFill="#f2ff00" visible="false">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="three_star" layoutX="569.0" layoutY="22.0" prefHeight="53.0" prefWidth="102.0" text="***" textFill="#f2ff00" visible="false">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="two_star" layoutX="569.0" layoutY="22.0" prefHeight="53.0" prefWidth="102.0" text="**" textFill="#f2ff00" visible="false">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </graphic>
+</TitledPane>
